@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GrimDawn_SaveEditor"
+version = "0.1.0"
+description = "恐怖黎明 (Grim Dawn) 角色存档 player.gdc 的图形化读取与修改工具"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Scerendy" }]
+keywords = ["GrimDawn", "SaveEditor"]
+# 零第三方依赖：界面用 Python 自带的 tkinter，其余只用标准库
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Games/Entertainment",
+]
+
+[tool.setuptools.packages.find]
+include = ["gd_save*"]
